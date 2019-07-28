@@ -32,7 +32,7 @@ const SoundCard = (props) => {
     
     return (
         <Grid container direction="row" className={classes.root}>
-            <Card className={classes.card} onClick={handlePlay}>
+            <Card className={classes.card} onClick={handlePlay} onTouchTap={handlePlay}>
                 <Grid
                     container
                     direction="row"
