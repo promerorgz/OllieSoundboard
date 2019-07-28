@@ -1,11 +1,24 @@
 const styles = theme => ({
     root: {
-        flexGrow: 1
+        flexGrow: 1,
+        width: '60%'
+    },
+    content: {
+        flexGrow: 1,
+        width: '60%',
+        alignContent: 'center'
+
+    },
+    cover: {
+        width: '40%',
+        heigth: 120,
+        borderRadius: '0 0 35 35'
     },
     card: {
+        display: 'flex',
         width: 350,
         height: 120,
-        padding: 24,
+        // padding: 24,
         margin: 24,
         borderRadius: 35,
         fontSize: 24,
@@ -23,27 +36,11 @@ const styles = theme => ({
     },
     header: {
         display: 'flex',
-        alignItems: 'center',
         color: 'white',
         textTransform: 'uppercase',
         fontSize: 24,
-        fontWeight: 600
+        fontWeight: 600,
     },
-    options: {
-        display: 'flex',
-        justifyContent: 'flex-end'
-    },
-    clientImg: {
-        backgroundColor: theme.palette.primary.main,
-        width: 70,
-        height: 70
-    },
-    menuItem: {
-        '&:focus': {
-            backgroundColor: theme.palette.primary.margin,
-            color: theme.palette.primary.text
-        }
-    }
 })
 
 export default styles

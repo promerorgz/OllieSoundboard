@@ -59,7 +59,7 @@ const soundData = [
     },
     {
         audio: Roast,
-        title: 'Roast',
+        title: 'Roast 🔥',
         img: ''
     },
     {
