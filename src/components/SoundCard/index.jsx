@@ -19,7 +19,7 @@ const SoundCard = (props) => {
     }
     
     return (
-        <Card className={classes.card} onClick={handlePlay} onTouchStart={handlePlay} onTouchStartCapture={handlePlay}>
+        <Card className={classes.card} onClick={handlePlay}>
             <CardContent className={classes.content}>
                 <Typography
                     className={classes.header}
