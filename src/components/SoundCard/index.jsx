@@ -8,10 +8,10 @@ import styles from './styles'
 
 const SoundCard = (props) => {
 
-    const { classes, title, audio: { default: sound }, img } = props;
+    const { classes, title, audio, img } = props;
 
     const howl = process.browser && new Howl({
-        src: [sound]
+        src: [audio.default]
     });
 
     const handlePlay = () => process.browser && howl.play()
