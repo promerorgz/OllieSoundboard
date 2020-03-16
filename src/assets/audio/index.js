@@ -10,16 +10,18 @@ import SoOffensive from './SoOffensive.mp3';
 import Stefano from './Stefano.mp3';
 import YaPorfis from './Ya_porfis.mp3';
 import imgaynow from '../images/imgaynow.jpeg';
+import Awwwww from '../audio/Awwww.m4a';
+import cutePup from '../images/cute-pup.png';
 
 const soundData = [
     {
         audio: guessImGay,
         title: 'I Guess Im Gay',
         img: imgaynow
-    }, 
+    },
     {
-        audio: FuckCorey, 
-        title: 'Fuck Corey', 
+        audio: FuckCorey,
+        title: 'Fuck Corey',
         img: ''
     },
     {
@@ -66,6 +68,11 @@ const soundData = [
         audio: IvanCackle,
         title: 'Ivan Cackle',
         img: ''
+    },
+    {
+        audio: Awwwww,
+        title: 'Awwww',
+        img: cutePup
     },
 ]
 
