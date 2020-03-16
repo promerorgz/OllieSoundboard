@@ -1,11 +1,11 @@
 import React from 'react';
-import soundData from '../../assets/audio';
+import soundData from './soundData';
 import SoundCard from '../SoundCard';
-import {withStyles} from '@material-ui/core'
+import { withStyles } from '@material-ui/core'
 import styles from './styles';
 import CardGrid from '../../containers/CardGrid';
 
-function Board({classes}) {
+function Board({ classes }) {
     return (
         <>
             <CardGrid className={classes.gridList}>

@@ -1,17 +1,19 @@
-import guessImGay from './I_Guess_Im_Gay_Now.mp3';
-import FuckCorey from './2Fuck2Corey.mp3';
-import DeliciousApples from './Delicious_Apples.mp3';
-import hahaha from './hahaha.mp3';
-import IHavePeople from './I_have_people_from.mp3';
-import Roast from './IMG_2596.mp3';
-import IvanCackle from './ivanCackle.mp3';
-import OnlyOne from './OnlyOne.mp3';
-import SoOffensive from './SoOffensive.mp3';
-import Stefano from './Stefano.mp3';
-import YaPorfis from './Ya_porfis.mp3';
-import imgaynow from '../images/imgaynow.jpeg';
-import Awwwww from '../audio/Awwww.m4a';
-import cutePup from '../images/cute-pup.png';
+import imgaynow from '../../static/images/imgaynow.jpeg';
+import cutePup from '../../static/images/cute-pup.png';
+
+const guessImGay = require('../../static/audio/I_Guess_Im_Gay_Now.mp3');
+var FuckCorey = require('../../static/audio/2Fuck2Corey.mp3');
+var DeliciousApples = require('../../static/audio/Delicious_Apples.mp3');
+var hahaha = require('../../static/audio/hahaha.mp3');
+var IHavePeople = require('../../static/audio/I_have_people_from.mp3');
+var Roast = require('../../static/audio/IMG_2596.mp3');
+var IvanCackle = require('../../static/audio/ivanCackle.mp3');
+var OnlyOne = require('../../static/audio/OnlyOne.mp3');
+var SoOffensive = require('../../static/audio/SoOffensive.mp3');
+var Stefano = require('../../static/audio/Stefano.mp3');
+var YaPorfis = require('../../static/audio/Ya_porfis.mp3');
+var Awwwww = require('../../static/audio/Awwww.m4a');
+
 
 const soundData = [
     {

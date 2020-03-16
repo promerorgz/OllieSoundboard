@@ -2,22 +2,20 @@ import React from 'react';
 import Card from '@material-ui/core/Card';
 import { Typography, withStyles, CardContent, CardMedia } from '@material-ui/core';
 import { Howl } from 'howler';
-import defaultImg from '../../assets/images/sound-wave-from-equalizer-flat-icon-vector-20402703.jpg';
+import defaultImg from '../../static/images/soundWave.jpg';
 
 import styles from './styles'
 
 const SoundCard = (props) => {
 
-    const { classes, title, audio, img } = props;
- 
-    const sound = new Howl({
-        src: audio
+    const { classes, title, audio: { default: sound }, img } = props;
+
+    const howl = process.browser && new Howl({
+        src: [sound]
     });
 
-    const handlePlay = () => {
-        sound.play()
-    }
-    
+    const handlePlay = () => process.browser && howl.play()
+
     return (
         <Card className={classes.card} onClick={handlePlay}>
             <CardContent className={classes.content}>
