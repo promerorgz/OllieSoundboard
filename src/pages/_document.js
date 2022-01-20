@@ -14,6 +14,8 @@ export default class MyDocument extends Document {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster Two" />
           <link rel="apple-touch-icon" sizes="128x128" href="../static/images/imgaynow.jpeg.jpg" />
+              <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
           <title>Ollie Soundboard</title>
         </Head>
         <body>
