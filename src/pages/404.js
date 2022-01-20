@@ -1,4 +1,4 @@
-import React from 'react'
-import SoundCard from '../components/SoundCard'
+import React from "react";
+import SoundCard from "../components/SoundCard";
 
-export default () => <SoundCard title="Boi if you dont get" />
+export default () => <SoundCard title="Boi if you dont get" url="/" />;

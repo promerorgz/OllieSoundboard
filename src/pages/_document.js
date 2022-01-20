@@ -1,6 +1,6 @@
-import React from 'react';
-import Document, { Head, Main, NextScript } from 'next/document';
-import { ServerStyleSheets } from '@material-ui/core/styles';
+import React from "react";
+import Document, { Head, Main, NextScript } from "next/document";
+import { ServerStyleSheets } from "@material-ui/core/styles";
 
 export default class MyDocument extends Document {
   render() {
@@ -8,15 +8,19 @@ export default class MyDocument extends Document {
       <html lang="en">
         <Head>
           {/* PWA primary color */}
-          <meta name="theme-color" content={'#fff000'} />
+          <meta name="theme-color" content={"#fff000"} />
           <meta charSet="utf-8" />
-          <link rel="shortcut icon" href="../static/images/soundWave.jpg" />
+          <link rel="shortcut icon" href="/images/soundWave.jpg" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster Two" />
-          <link rel="apple-touch-icon" sizes="128x128" href="../static/images/imgaynow.jpeg.jpg" />
-              <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-
-          <title>Ollie Soundboard</title>
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Lobster Two"
+          />
+          <link
+            rel="apple-touch-icon"
+            sizes="128x128"
+            href="../public/images/imgaynow.jpeg.jpg"
+          />
         </Head>
         <body>
           <Main />
@@ -27,7 +31,7 @@ export default class MyDocument extends Document {
   }
 }
 
-MyDocument.getInitialProps = async ctx => {
+MyDocument.getInitialProps = async (ctx) => {
   // Resolution order
   //
   // On the server:
@@ -56,7 +60,7 @@ MyDocument.getInitialProps = async ctx => {
 
   ctx.renderPage = () =>
     originalRenderPage({
-      enhanceApp: App => props => sheets.collect(<App {...props} />),
+      enhanceApp: (App) => (props) => sheets.collect(<App {...props} />),
     });
 
   const initialProps = await Document.getInitialProps(ctx);
@@ -64,6 +68,9 @@ MyDocument.getInitialProps = async ctx => {
   return {
     ...initialProps,
     // Styles fragment is rendered after the app and page rendering finish.
-    styles: [...React.Children.toArray(initialProps.styles), sheets.getStyleElement()],
+    styles: [
+      ...React.Children.toArray(initialProps.styles),
+      sheets.getStyleElement(),
+    ],
   };
 };
