@@ -1,15 +1,11 @@
 import React from "react";
-import Grid from "@material-ui/core/Grid";
+import { ResponsiveGrid, GridWrapper } from "./styles";
 
 function CardGrid({ children }) {
   return (
-    <Grid container justify="center">
-      <Grid item xs={6}>
-        <Grid container justify="flex-start">
-          {children}
-        </Grid>
-      </Grid>
-    </Grid>
+    <GridWrapper>
+      <ResponsiveGrid>{children}</ResponsiveGrid>
+    </GridWrapper>
   );
 }
 

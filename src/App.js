@@ -1,25 +1,24 @@
 import React from "react";
 import Navbar from "./components/navbar";
 import Board from "./components/Board";
-import { withStyles } from "@material-ui/core";
 import fingers from "./public/favicon.png";
+import styled from "styled-components";
 
-const styles = {
-  app: {
-    height: "100vh",
-    backgroundImage: `url(${fingers})`,
-    backgroundPosition: "right",
-    backgroundSize: "contain",
-    backgroundRepeat: "no-repeat",
-  },
-};
-console.log({ fingers });
-function App({ classes }) {
+const AppContainer = styled.div`
+  min-height: 100vh;
+  /* background-image: url(${fingers}); */
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background: #121212;
+`;
+
+function App() {
   return (
-    <div className={classes.app}>
+    <AppContainer>
       <Navbar />
-      <Board styles={styles} />
-    </div>
+      <Board />
+    </AppContainer>
   );
 }
-export default withStyles(styles)(App);
+export default App;

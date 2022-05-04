@@ -1,15 +1,12 @@
 import React from "react";
 import soundData from "./soundData";
 import SoundCard from "../SoundCard";
-import { withStyles } from "@material-ui/core";
-import styles from "./styles";
 import CardGrid from "../../containers/CardGrid";
 
-function Board({ classes, styles }) {
-  const { height, ...boardStyles } = styles;
+function Board() {
   return (
     <>
-      <CardGrid className={classes.gridList} {...boardStyles}>
+      <CardGrid>
         {soundData.map((tile, index) => (
           <SoundCard
             key={index}
@@ -23,4 +20,4 @@ function Board({ classes, styles }) {
   );
 }
 
-export default withStyles(styles)(Board);
+export default Board;

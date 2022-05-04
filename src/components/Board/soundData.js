@@ -13,6 +13,10 @@ var SoOffensive = require("../../public/audio/SoOffensive.mp3");
 var Stefano = require("../../public/audio/Stefano.mp3");
 var YaPorfis = require("../../public/audio/Ya_porfis.mp3");
 var Awwwww = require("../../public/audio/Awwww.m4a");
+var bumbahhdment = require("../../public/audio/bumbahdment.m4a");
+var Ninety5Percent = require("../../public/audio/95percent.m4a");
+var nachoCame = require("../../public/audio/nachocame.m4a");
+var chillOnBeach = require("../../public/audio/chillOnBeach.m4a");
 
 const soundData = [
   {
@@ -74,6 +78,26 @@ const soundData = [
     audio: Awwwww,
     title: "Awwww",
     img: cutePup,
+  },
+  {
+    audio: bumbahhdment,
+    title: "BumBAHHdment",
+    img: "",
+  },
+  {
+    audio: nachoCame,
+    title: "Nacho Came",
+    img: "",
+  },
+  {
+    audio: chillOnBeach,
+    title: "chill on the beach",
+    img: "",
+  },
+  {
+    audio: Ninety5Percent,
+    title: "95%",
+    img: "",
   },
 ];
 
